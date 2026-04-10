@@ -137,7 +137,7 @@
         const countIdx = columns.indexOf('playcount');
 
         if (userIdIdx === -1 || countIdx === -1) {
-            logWarn('Unexpected columns from API:', columns);
+            log('No play data returned from API.');
             return [];
         }
 
